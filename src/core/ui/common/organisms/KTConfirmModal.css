@@ -1,0 +1,18 @@
+.kt-confirm-modal .ant-modal-header {
+  padding: 15px 15px 0 15px !important;
+  border: none !important;
+  background-color: #fff !important;
+}
+
+.kt-confirm-modal .ant-modal-header .ant-modal-title {
+  text-align: center !important;
+  font-size: 20px !important;
+}
+
+.kt-confirm-modal .ant-modal-close-x {
+  margin-top: 0px !important;
+}
+
+.kt-confirm-modal .ant-modal-body {
+  padding-bottom: 20px !important;
+}

@@ -1,0 +1,23 @@
+{
+  "extends": ["react-app"],
+  "ignorePatterns": [
+    "src/domains/**/*.js",
+    "src/components/Company/**/*.js",
+    "src/components/TestOutline/Screens/ChuanDonViKienThuc.js",
+    "components/TestOutline/Screens/ChuanDonViKienThuc.js",
+    "src/components/TestOutline/**/*.js"
+  ],
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["**/*.js?(x)"],
+      "rules": {
+        // ******** add ignore rules here *********
+        "react/no-unescaped-entities": "off",
+        "react/display-name": "off",
+        "react/prop-types": "off",
+        "eqeqeq": "off",
+      },
+    },
+  ],
+}

@@ -1,0 +1,85 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+.site-layout {
+  background: #fff;
+  margin-left: 250px;
+  height: 100vh;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.list-layout {
+  /* Auto Layout */
+  /* display: flex;
+  flex-direction: row; */
+  align-items: flex-start;
+  /* padding: 0px 24px 24px; */
+  :global {
+    .ant-layout-sider-children {
+      height: auto !important;
+    }
+    .ant-page-header {
+      .ant-page-header-footer {
+        margin-top: 0 !important;
+      }
+      &.has-tabs {
+        .ant-page-header-footer {
+          margin-top: 8px !important;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  padding: 0px !important;
+  height: auto !important;
+  min-height: 32px;
+  flex: none !important;
+  order: 0 !important;
+  align-self: stretch;
+  flex-grow: 0 !important;
+  margin: 0px !important;
+}
+
+.content {
+  margin: 16px 0px 0px 0px !important;
+  padding: 0px !important;
+  // height: calc(100vh - 168px);
+  // height: calc(100vh - 168px) !important;
+}
+
+.has-query {
+  &.content {
+    margin: 12px 0px 0px 0px !important;
+  }
+}
+
+.sider {
+  background: @background-color-light !important;
+  /* Background Colors/Grey 3 */
+
+  border: 1px solid @grey-2 !important;
+  box-sizing: border-box !important;
+  border-radius: 5px !important;
+  margin-left: 20px !important;
+  padding: 10px !important;
+  /* Inside Auto Layout */
+  order: 1 !important;
+  align-self: stretch !important;
+
+  /* TungPT: Fix scroll issue */
+  height: calc(100vh - 93px) !important;
+  position: sticky !important;
+  top: 0px !important;
+  left: 0px !important;
+  transition: none;
+}
+
+.sider-collapsed {
+  border: none !important;
+  margin-left: 0px !important;
+  padding: 0px !important;
+}

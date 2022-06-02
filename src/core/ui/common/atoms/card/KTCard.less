@@ -1,0 +1,75 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+@KTCard-prefix-cls: ~'KTCard';
+
+.@{KTCard-prefix-cls} {
+  border-radius: 5px !important;
+  .ant-card-body {
+    padding: 16px;
+  }
+
+  &.@{KTCard-prefix-cls}-title-small {
+    .ant-card-head {
+      padding: 0 16px !important;
+      min-height: 24px !important;
+    }
+    .ant-card-head-title {
+      font-size: 16px !important;
+      padding: 8px 0 !important;
+    }
+  }
+}
+
+.kt-card-base(@color; @color-border; @color-hover; @color-bg) {
+  background-color: @color !important;
+  border-color: @color!important;
+
+  &.@{KTCard-prefix-cls}-hover:hover {
+    border-color: @color-hover !important;
+  }
+
+  &.@{KTCard-prefix-cls}-ghost {
+    background-color: @color-bg !important;
+    border-color: @color !important;
+
+    &.@{KTCard-prefix-cls}-border-light {
+      border-color: @color-border !important;
+    }
+
+    &.@{KTCard-prefix-cls}-hover:hover {
+      border-color: @color-hover !important;
+    }
+  }
+}
+
+.@{KTCard-prefix-cls}-type-primary {
+  .kt-card-base(@color-primary; @color-primary-border; @color-primary-hover; @color-primary-tag);
+}
+
+.@{KTCard-prefix-cls}-type-secondary {
+  .kt-card-base(@color-secondary; @color-secondary-border; @color-secondary-hover; @color-secondary-tag);
+}
+
+.@{KTCard-prefix-cls}-type-info {
+  .kt-card-base(@color-info; @color-info-border; @color-info-hover; @color-info-tag);
+}
+
+.@{KTCard-prefix-cls}-type-success {
+  .kt-card-base(@color-success; @color-success-border; @color-success-hover; @color-success-tag);
+}
+
+.@{KTCard-prefix-cls}-type-warning {
+  .kt-card-base(@color-warning; @color-warning-border; @color-warning-hover; @color-warning-tag);
+}
+
+.@{KTCard-prefix-cls}-type-danger {
+  .kt-card-base(@color-danger; @color-danger-border; @color-danger-hover; @color-danger-tag);
+}
+
+.@{KTCard-prefix-cls}-type-gray {
+  .kt-card-base(@grey-5;@grey-5; @grey-5; @grey-5);
+}
+
+.@{KTCard-prefix-cls}-type-error {
+  .kt-card-base(@color-danger-tag;@color-danger-tag; @color-danger-tag; @color-danger-tag);
+}

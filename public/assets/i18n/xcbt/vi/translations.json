@@ -1,0 +1,154 @@
+{
+  "a00": {
+    "button": {
+      "verify": "Xác minh ngay"
+    },
+    "content": {
+      "001": "Xác thực các văn bản, hồ sơ, hợp đồng điện tử theo Nghị định số 1340/2018/NĐ-CP",
+      "002": "HOÀN TOÀN MIỄN PHÍ",
+      "003": "Kiểm tra tài liệu có bị chỉnh sửa sau khi ký",
+      "004": "Kiểm tra chứng thư số có hợp lệ tại thời điểm ký"
+    },
+    "title": {
+      "001": "Cổng xác minh",
+      "002": "thông tin tài liệu điện tử"
+    }
+  },
+  "a31": {
+    "title": "Chọn loại câu hỏi"
+  },
+  "base": {
+    "actions": {
+      "cancel": "Hủy",
+      "changeStatus": "Chuyển trạng thái",
+      "collapseSearch": "Thu gọn",
+      "confirm": "Xác nhận",
+      "delete": "Xóa",
+      "search": "Tìm kiếm"
+    },
+    "messages": {
+      "changeStatusSuccess": "Chuyển trạng thái thành công"
+    },
+    "others": {
+      "loading": "Đang tải",
+      "somethingWentWrong": "Có lỗi trong quá trình xử lý!"
+    },
+    "table": {
+      "empty": "Không có dữ liệu",
+      "fields": {
+        "createdBy": "Tạo bởi"
+      },
+      "headers": {
+        "actions": "Hành động",
+        "status": "Trạng thái",
+        "stt": "STT"
+      },
+      "loading": "Đang tải dữ liệu",
+      "others": {
+        "createdByEmpty": "N/A"
+      }
+    }
+  },
+  "shares": {
+    "activate": "Hoạt động",
+    "addQuestion": "Thêm câu hỏi",
+    "nMinutes": "{{n}} phút",
+    "nQuestions": "{{n}} câu",
+    "nTestForms": "{{n}} đề",
+    "newlyCreated": "Mới tạo",
+    "oneMinute": "1 phút",
+    "other": "Khác",
+    "totalQuestion": "Tổng câu hỏi",
+    "unlimitedMinutes": "Không giới hạn"
+  },
+  "tables": {
+    "testFormGroup": {
+      "actions": {
+        "generateTestForm": "Sinh đề"
+      }
+    },
+    "testOutline": {
+      "fields": {
+        "code": "Mã khung đề",
+        "name": "Tên khung đề"
+      },
+      "fieldsData": {
+        "status": {
+          "activate": "Hoạt động",
+          "newlyCreated": "Mới tạo",
+          "other": "Khác"
+        }
+      },
+      "headers": {
+        "info": "Thông tin đề",
+        "summary": "Thống kê câu hỏi",
+        "totalTestOutline": "Số đề thi"
+      }
+    }
+  },
+  "amsidebar": {
+    "menu": {
+      "quan_ly_nguoi_dung": "Quản Lý Người Dùng",
+      "quan_ly_nguoi_dung_doanh_nghiep": "Quản Lý Người Dùng Doanh Nghiệp",
+      "quan_ly_khach_hang_doanh_nghiep": "Quản Lý Khách Hàng Doanh Nghiệp",     
+      "quan_ly_tai_khoan_doanh_nghiep": "Quản Lý Tài Khoản Doanh Nghiệp",
+      "quan_ly_nguoi_dung_ngan_hang": "Quản lý Người Dùng Ngân hàng",
+      "admin_ngan_hang": "Admin Ngân Hàng",
+      "user_ngan_hang": "User Ngân Hàng",
+      "fpt_quan_tri": "FPT Quản Trị",
+      "quan_ly_nhom_nguoi_dung": "Quản Lý Nhóm Người Dùng",
+      "nhom_nguoi_dung_doanh_nghiep": "Nhóm Người dùng Doanh Nghiệp",
+      "nhom_nguoi_dung_ngan_hang": "Nhóm Người Dùng Ngân Hàng",
+      "mhom_nguoi_dung_fpt_quan_tri": "Nhóm Người Dùng FPT Quản Trị",
+      "danh_muc_loai_giao_dich_tinh_phi": "Danh mục loại giao dịch tính phí",
+      "quan_ly_dien_gui_nhan": "Quản Lý Điện Gửi Nhận",
+      "bieu_mau_dien": "Biểu Mẫu Điện",
+      "bao_cao_dien": "Báo Cáo Điện",
+      "quan_ly_thong_bao": "Quản lý Thông báo",
+      "bieu_mau_thong_bao": "Biểu mẫu Thông báo",
+      "quan_ly_goi_dich_vu": "Quản Lý Gói Dịch Vụ",
+      "quan_ly_dich_vu_ngan_hang": "Quản Lý Dịch Vụ Ngân Hàng",
+      "quan_ly_xep_hang_ngan_hang": "Quản Lý Xếp Hạng Ngân Hàng",
+      "danh_muc_loai_phi_ngan_hang": "Danh Mục Loại Phí Ngân Hàng",
+      "quy_tac_tinh_phi_ngan_hang": "Quy Tắc Tính Phí Ngân Hàng",
+      "quan_ly_thu_phi_ngan_hang": "Quản Lý Thu Phí Ngân Hàng",
+      "quan_ly_dich_vu_doanh_nghiep": "Quản Lý Dịch Vụ Doanh Nghiệp",
+      "danh_muc_loai_phi_doanh_nghiep": "Danh Mục Loại Phí Doanh Nghiệp",
+      "quy_tac_tinh_phi_doanh_nghiep": "Quy tắc tính phí doanh nghiệp",
+      "quan_ly_thu_phi_doanh_nghiep": "Quản lý thu phí doanh nghiệp",
+      "bao_cao": "Báo Cáo",
+      "bao_cao_nguoi_dung": "Báo Cáo Nguời Dùng",
+      "bao_cao_hop_dong_dien_tu": "Báo Cáo Hợp Đồng Điện Tử",
+      "bao_cao_lc": "Báo Cáo L/C",
+      "bao_cao_cong_no": "Báo Cáo Công Nợ",
+      "cong_no_thanh_vien": "Công Nợ Thành Viên",
+      "cong_no_nha_cung_cap": "Công Nợ Nhà Cung Cấp",
+      "quan_tri_rui_ro": "Quản Trị Rủi Ro",
+      "thiet_lap_tieu_chi_aml": "Thiết Lập Tiêu Chí AML",
+      "danh_muc_du_lieu_chung": "Danh Mục Dữ Liệu Chung",
+      "quan_ly_bieu_mau": "Quản Lý Biểu Mẫu",
+      "quan_ly_chi_nhanh": "Quản Lý Chi Nhánh",
+      "quan_ly_phong_ban": "Quản Lý Phòng Ban",
+      "danh_muc_loai_chung_tu": "Danh Mục Loại Chứng Từ",
+      "danh_muc_loai_giao_dich": "Danh Mục Loại Giao Dịch",
+      "phan_loai_lc": "Phân Loại L/C",
+      "quan_ly_thong_tin_fpt": "Quản Lý Thông Tin FPT",
+      "dinh_nghia_ma_loi_he_thong": "Định Nghĩa Mã Lỗi Hệ Thống",
+      "quan_ly_job": "Quản Lý Job",
+      "danh_sach_job": "Danh Sách Job",
+      "bao_cao_job": "Báo Cáo Job",
+      "quan_tri_he_thong": "Quản Trị Hệ Thống",
+      "cau_hinh_sla": "Cấu Hình SLA",
+      "phe_duyet_tac_vu": "Phê Duyệt Tác Vụ",
+      "quan_ly_cau_hinh_he_thong": "Quản Lý Cấu Hình Hệ Thống",
+      "quan_ly_to_chuc_ket_noi": "Quản Lý Tổ Chức Kết Nối",
+      "tin_tuc_va_dieu_khoan_dieu_kien": "Tin Tức Và Điều Khoản Điều Kiện"
+    }
+  },
+  "message" : {
+    "error": {
+      "user_does_not_exit" : "Trạng thái người dùng không hợp lệ.",
+      "user_not_valid" : "Tên đăng nhập hoặc mật khẩu không chính xác!"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+diff a/src/components/cm/cm.16.corporate/cm.16.corporate.create.uploadfile/domains/CreateCorporateUploadDomain.js b/src/components/cm/cm.16.corporate/cm.16.corporate.create.uploadfile/domains/CreateCorporateUploadDomain.js	(rejected hunks)
+@@ -244,6 +244,7 @@
+       });
+       console.log('here like to send the error to the user instead');
+       console.log(err?.response?.data);
++      if (err?.response?.data?.data == 'corporate code has exists') {
+         message.error('Mã số đăng ký doanh nghiệp đã tồn tại.');
+       }
+     }

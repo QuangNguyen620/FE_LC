@@ -1,0 +1,10 @@
+.kt-pagination {
+  position: relative;
+  margin: 15px 0 15px 0;
+  background-color: #fff;
+}
+
+.kt-pagination .ant-pagination-total-text {
+  position: absolute;
+  left: 0;
+}

@@ -1,0 +1,62 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+.ant-form-item-explain,
+.ant-form-item-extra {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.ant-input-group.ant-input-group-compact > * {
+  display: inline-block !important;
+  float: none !important;
+  vertical-align: top !important;
+  border-radius: 0 !important;
+}
+
+.ant-input-group.ant-input-group-compact > *:last-child {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.ant-input-group.ant-input-group-compact
+  .ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.ant-input-group.ant-input-group-compact > *:not(:last-child, :first-child) {
+  &:hover,
+  &:focus {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+}
+
+.ant-form-item-label span.anticon.anticon-info-circle {
+  &:hover {
+    color: @color-primary !important;
+  }
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  position: absolute !important;
+  right: -14px !important;
+  top: 2px !important;
+  color: @color-danger !important;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)
+  span.anticon {
+  position: absolute !important;
+  right: -28px !important;
+  color: @text-primary-light !important;
+}
+
+.ant-form-item-label > label:not(.ant-form-item-required) span.anticon {
+  position: absolute !important;
+  right: -18px !important;
+  color: @text-primary-light !important;
+}

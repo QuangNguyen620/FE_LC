@@ -1,0 +1,154 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+.left-content {
+  background: @grey-0 !important;
+}
+
+.right-content-list {
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: calc(100% - 120px) !important;
+  margin-top: 8px;
+}
+
+.right-content-list-item {
+  width: 100%;
+}
+
+.container {
+  height: 100% !important;
+}
+
+.file-upload-container {
+  height: calc(100% - 40px) !important;
+}
+
+.file-pdf-container {
+  height: calc(100% - 40px) !important;
+  overflow: auto;
+}
+
+.file-upload-icon {
+  font-size: 48px;
+  color: @text-disabled-light;
+}
+
+.card-verify-status {
+  margin-bottom: 8px;
+}
+
+.badge-item-valid {
+  height: 24px;
+  width: 70px;
+  border-radius: 24px;
+  padding: 0px;
+  float: right;
+  background: @color-success;
+}
+
+.badge-item-invalid {
+  height: 24px;
+  width: 103px;
+  border-radius: 24px;
+  padding: 0px;
+  float: right;
+  background: @color-danger;
+}
+
+input[type='file'] {
+  display: none !important;
+}
+
+.custom-card {
+  box-shadow: 0 2px 6px 0 rgba(114, 114, 114, 0.2),
+    0 2px 10px 0 rgba(114, 114, 114, 0.2);
+}
+.right-step-action {
+  float: right;
+}
+// .custom-file-upload {
+//   color: white !important;
+//   background: @color-primary !important;
+//   border: 1px solid @color-primary !important;
+//   display: inline-block;
+//   padding: 2px 7px;
+//   cursor: pointer;
+//   border-radius: 4px;
+//   transition: 0.5s;
+// }
+
+// .custom-file-upload:hover,
+// .custom-file-upload:focus {
+//   color: #fff !important;
+//   border-color: #2a98ff !important;
+//   background: #2a98ff !important;
+// }
+
+.custom-tag {
+  color: @typo-primary-text;
+  background: #f3f3f3;
+  border: 1px solid #f3f3f3;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 3px 15px;
+  border-radius: 43px;
+}
+
+.custom-tag-disabled {
+  color: @typo-primary-text;
+  background: #f3f3f3;
+  border: 1px solid #f3f3f3;
+  cursor:  not-allowed;
+  transition: 0.5s;
+  padding: 3px 15px;
+  border-radius: 43px;
+}
+
+.custom-tag:hover,
+.custom-tag:focus {
+  color: @typo-primary-text;
+  border-color: @grey-3 !important;
+  background: @grey-3 !important;
+}
+.contract-file-info {
+  padding: 3px 18px;
+  width: 100%;
+}
+.contract-file-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right-step-action-lcType-2 {
+  opacity: 0;
+}
+// table {
+//   font-family: arial, sans-serif;
+//   border-collapse: collapse;
+//   width: 100%;
+// }
+
+// td,
+// th {
+//   border: 1px solid #dddddd;
+//   text-align: left;
+//   padding: 8px;
+// }
+
+// css preview pdf
+.preview-pdf {
+  border: 0px;
+  // border-radius: 10px;
+  padding: 12px;
+  width: -webkit-fill-available;
+  height: 100vh;
+  // display: initial;
+  // position: relative;
+}
+
+.text-require {
+  color: @color-text-require !important;
+}

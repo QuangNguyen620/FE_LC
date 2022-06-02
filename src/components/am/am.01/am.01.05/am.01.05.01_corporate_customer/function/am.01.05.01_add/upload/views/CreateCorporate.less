@@ -1,0 +1,157 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+.left-content {
+  background: @grey-0 !important;
+}
+
+.right-content-list {
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: calc(100% - 120px) !important;
+  margin-top: 8px;
+}
+
+.right-content-list-item {
+  width: 100%;
+}
+
+.container {
+  height: 100% !important;
+}
+
+.file-upload-container {
+  height: calc(100% - 40px) !important;
+}
+
+.file-pdf-container {
+  height: calc(100% - 40px) !important;
+  overflow: auto;
+}
+
+.file-upload-icon {
+  font-size: 48px;
+  color: @text-disabled-light;
+}
+
+input[type='file'] {
+  display: none !important;
+}
+
+.card-verify-status {
+  margin-bottom: 8px;
+}
+
+.badge-item-valid {
+  height: 24px;
+  width: 70px;
+  border-radius: 24px;
+  padding: 0px;
+  float: right;
+  background: @color-success;
+}
+
+.badge-item-invalid {
+  height: 24px;
+  width: 103px;
+  border-radius: 24px;
+  padding: 0px;
+  float: right;
+  background: @color-danger;
+}
+
+.custom-file-upload {
+  color: white !important;
+  background: @color-primary !important;
+  border: 1px solid @color-primary !important;
+  display: inline-block;
+  padding: 2px 7px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+//new css
+#form-footer {
+  text-align: -webkit-center !important;
+}
+
+.eye-filled {
+  align-items: center;
+  color: #595959;
+}
+
+.main-container {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.padding-md {
+  padding: @padding-md; //16px
+}
+
+.padding-lg {
+  padding: @padding-lg; //24px
+}
+
+.input-search {
+  width: 80%;
+}
+
+.marginR-md {
+  float: right;
+  margin-right: @margin-md; //16px - small containers and buttons
+  gap: 12px !important;
+}
+
+.item-center {
+  padding-left: @padding-md;
+}
+
+.padding-title {
+  padding-left: @padding-md;
+  padding-top: @padding-md;
+}
+
+.padding-title-sub {
+  padding-left: @padding-md;
+  padding-top: 5px;
+  padding-bottom: @padding-md;
+}
+
+.text-require {
+  color: @color-text-require !important;
+}
+
+.display-grid {
+  display: grid;
+}
+
+.padding-buton {
+  gap: 24px !important;
+  margin-right: auto;
+}
+
+.width-radio {
+  width: 100%;
+}
+
+.width-date-picker {
+  width: 100%;
+}
+
+.width-select {
+  width: 100%;
+}
+
+.secondary-btn {
+  color: @typo-primary-text;
+  background: #f5f5f5;
+}
+
+#filter-btn:focus .secondary-btn:hover,
+.secondary-btn:focus {
+  border-color: #636363 !important;
+  color: rgb(48, 48, 48) !important;
+}

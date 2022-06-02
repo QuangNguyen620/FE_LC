@@ -1,0 +1,50 @@
+.kt-modal {
+  &.ant-modal {
+    top: 48px !important;
+    max-width: calc(100% - 16px) !important;
+  }
+
+  .ant-modal-title {
+    position: relative;
+    top: 3px;
+  }
+
+  .ant-modal-body {
+    padding: 16px 20px 4px 20px !important;
+  }
+
+  .ant-modal-header {
+    padding: 15px 16px 14px 16px !important; // Modal header 56 as design
+    background-color: #f6f6f6 !important;
+  }
+
+  .ant-modal-close-x {
+    margin-top: 3px !important;
+  }
+
+  .ant-modal-footer {
+    text-align: left !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+.ant-modal-content {
+  border-radius: 8px !important;
+}
+
+.ant-modal-header {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.ant-modal.kt-modal-no-form .ant-modal-body {
+  padding-bottom: 20px !important;
+}
+
+.ant-modal.kt-modal-header-center .ant-modal-header {
+  text-align: center !important;
+}
+
+.ant-modal.kt-modal-no-header-bg .ant-modal-header {
+  background-color: #fff !important;
+}

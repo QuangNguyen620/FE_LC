@@ -1,0 +1,31 @@
+.public-layout {
+  background: url('../../../../../../assets/img/brand/bg_page_intro.png');
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/* .public-layout-left {
+  background: #1890ff;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.public-layout-left-img {
+  height: 100%;
+  width: 100%;
+  background: url('../../../../../assets/img/brand/title-img.jpg');
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 10px;
+}
+
+.public-layout-left-button-group {
+  height: 100%;
+  width: 100%;
+}
+
+.additional-button {
+  width: 50% !important;
+  height: 50% !important;
+  margin: 25%;
+} */

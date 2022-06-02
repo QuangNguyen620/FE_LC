@@ -1,0 +1,8 @@
+export const ErrorsCode = {
+  CONFLICT: '4090000',
+  BAD_REQUEST: '4000000',
+  USER_DOES_NOT_EXIST: '4040007',
+  FEE_RULE_CODE_DUPLICATE: '4000008',
+};
+
+export const TIME_OUT = 300000;

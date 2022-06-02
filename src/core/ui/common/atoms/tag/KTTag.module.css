@@ -1,0 +1,19 @@
+.kt-tag {
+  border-radius: 5px;
+  padding: 2px 8px 2px 8px;
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  height: 24px;
+}
+.kt-grade-tag {
+  background: #eefcfd;
+  color: #00ccd6;
+}
+.kt-subject-tag {
+  background: #fff7e6;
+  color: #fa8c16;
+}

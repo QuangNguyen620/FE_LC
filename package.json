@@ -1,0 +1,151 @@
+{
+  "name": "@xcbt/xcbt-skeleton",
+  "version": "2.0.0",
+  "description": "Module mẫu",
+  "author": {
+    "name": "xCBT Team",
+    "url": "https://khaothi.online"
+  },
+  "contributors": [],
+  "homepage": ".",
+  "copyright": "Copyright 2021 by FPT Information System",
+  "license": "https://khaothi.online/privacy",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-table": "^2.51.2",
+    "@sentry/browser": "^5.15.5",
+    "antd": "^4.14.1",
+    "antd-validate-table": "^1.0.4",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.3",
+    "core-js": "^3.19.1",
+    "customize-cra": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "form-data": "^4.0.0",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-chained-backend": "^3.0.2",
+    "i18next-http-backend": "^1.3.0",
+    "i18next-localstorage-backend": "^3.1.3",
+    "less": "^3.13.1",
+    "less-loader": "5.0.0",
+    "loglevel": "^1.7.1",
+    "loglevel-plugin-prefix": "^0.8.4",
+    "moment": "^2.29.1",
+    "prop-types": "^15.6.1",
+    "query-string": "~5.1.1",
+    "react": "^16.13.1",
+    "react-csv": "^2.2.2",
+    "react-dom": "^16.13.1",
+    "react-file-viewer": "^0.5.0",
+    "react-ga": "^2.7.0",
+    "react-i18next": "^11.11.4",
+    "react-iframe": "^1.8.0",
+    "react-modal-video": "^1.2.8",
+    "react-pdf": "^5.7.1",
+    "react-router-dom": "5.2.0",
+    "react-toastify": "^8.1.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-jest": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/addons": "^6.3.7",
+    "@storybook/node-logger": "^6.3.7",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.7",
+    "@storybook/testing-react": "^0.0.22",
+    "@storybook/theming": "^6.3.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "babel-jest": "^24.0.1",
+    "babel-plugin-fast-async": "^6.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "i18next-scanner": "^3.0.0",
+    "jest-cucumber": "^3.0.1",
+    "mutationobserver-shim": "^0.3.7",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^2.3.2",
+    "react-app-rewired": "^2.1.8",
+    "react-dev-utils": "^11.0.4",
+    "react-scripts": "^3.0.1",
+    "storybook-addon-designs": "^6.0.1",
+    "storybook-css-modules-preset": "^1.1.1"
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0",
+    "webpack": "4.42.0"
+  },
+  "scripts": {
+    "start-js": "react-app-rewired start",
+    "start": "react-app-rewired start",
+    "build-js": "DISABLE_ESLINT_PLUGIN=true && GENERATE_SOURCEMAP=false react-app-rewired build --expose-gc --max-old-space-size=4096",
+    "build-nginx": "cp nginx.conf ./build/ && cp -rf nginx-start ./build/",
+    "build": "npm-run-all 'lint --quiet' test:generate-output build-js build-storybook build-nginx",
+    "test": "react-scripts test --env=jsdom ",
+    "test:generate-output": "react-scripts test --json --outputFile=src/.jest-test-results.json --ci --silent --watchAll=false || exit 0",
+    "eject": "react-app-rewired eject",
+    "sb": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook --quiet --loglevel error -o build/storybook",
+    "lint": "eslint  -c .eslintrc src",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "et": "i18next-scanner"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "prettier"
+    ],
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "curly": "error",
+      "eqeqeq": "off",
+      "lines-between-class-members": [
+        "error",
+        "always"
+      ],
+      "newline-before-return": "warn",
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ],
+    "transform": {
+      "^.+\\.[tj]sx?$": "babel-jest",
+      "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not ie <= 9",
+    "not op_mini all"
+  ],
+  "bugs": {
+    "url": "https://khaothi.online/lien-he"
+  }
+}

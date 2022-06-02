@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "react-app",
+    "prettier"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "curly": "error",
+    "eqeqeq": "off",
+    "lines-between-class-members": [
+      "error",
+      "always"
+    ],
+    "newline-before-return": "off",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "ignorePatterns": [
+    // "path/can.ignore",
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.stories.*"
+      ],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ]
+}

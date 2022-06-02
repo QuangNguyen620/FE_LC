@@ -1,0 +1,202 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+.kt-table-close-search .ant-pro-table-search-query-filter {
+  visibility: hidden;
+  opacity: 0;
+  height: 0 !important;
+  transition: height 0ms 400ms, opacity 800ms 0ms;
+  overflow: hidden;
+  padding: 0;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.kt-table-open-search {
+  .ant-pro-table-search-query-filter {
+    visibility: visible;
+    transition: height 0ms 0ms, opacity 800ms 0ms;
+    height: auto;
+    opacity: 1;
+  }
+
+  .ant-pro-table-search-query-filter {
+    margin-bottom: 0;
+  }
+
+  .ant-pro-table-list-toolbar-container {
+    padding-top: 0px;
+  }
+}
+
+.ant-pro-table-column-setting-list {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  .ant-tree .ant-tree-treenode {
+    align-items: center;
+  }
+}
+
+.ant-pro-table:not(:root):fullscreen {
+  padding: 16px;
+}
+
+.ant-pro-table-search-query-filter .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.kt-table .ant-pro-table-list-toolbar-title .ant-typography {
+  margin-bottom: 0 !important;
+}
+
+// .kt-table .ant-table-tbody tr:last-child td {
+//   border-bottom: none !important;
+// }
+
+@media (max-width: 575px) {
+  .ant-pro-table-search.ant-pro-table-search-query-filter {
+    margin-bottom: 0 !important;
+  }
+  .kt-table .ant-form-item-label {
+    display: none !important;
+  }
+  .kt-table .pro-form-query-filter-actions {
+    margin-bottom: 0 !important;
+  }
+
+  .ant-pro-table:not(:root):fullscreen {
+    padding: 8px !important;
+  }
+}
+
+.ant-table {
+  &-thead {
+    > tr {
+      > th {
+        font-weight: 500;
+        // font-weight: 600;
+      }
+    }
+  }
+}
+
+.ant-pro-table .ant-table {
+  border: 1px solid @grey-2 !important;
+  border-radius: 5px !important;
+}
+
+.ant-pro-table .ant-card .ant-card-body {
+  padding: 0;
+}
+
+.ant-pro-table .ant-pro-table-search-query-filter {
+  background: #f6f6f6;
+  border-radius: 5px !important;
+  border: 1px solid @grey-2 !important;
+}
+
+.ant-pro-table .ant-table-row {
+  height: auto !important;
+}
+
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background: @table-selected-row-bg !important;
+}
+
+.ant-pro-table-alert .ant-alert-info {
+  background-color: @table-row-hover-bg !important;
+  border: 1px solid @grey-2 !important;
+}
+
+.ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background-color: @table-selected-row-hover-bg !important;
+}
+
+// .ant-table-wrapper {
+//   height: 100%;
+
+//   .ant-spin-nested-loading {
+//     height: 100%;
+
+//     .ant-spin-container {
+//       height: 100%;
+//       display: flex;
+//       flex-flow: column nowrap;
+
+//       .ant-table {
+//         flex: auto;
+//         overflow: hidden;
+
+//         .ant-table-container {
+//           height: 100%;
+//           display: flex;
+//           flex-flow: column nowrap;
+
+//           .ant-table-header {
+//             flex: none;
+//           }
+
+//           .ant-table-body {
+//             flex: auto;
+//             overflow: scroll;
+//           }
+//         }
+//       }
+
+//       .ant-table-pagination {
+//         flex: none;
+//       }
+//     }
+//   }
+// }
+
+.kt-table-info {
+  .ant-table-tbody {
+    > tr > td {
+      border: none !important;
+      padding: 4px !important;
+      &:first-child {
+        padding-left: 0px !important;
+      }
+    }
+  }
+}
+
+// .ant-table {
+//   th {
+//     white-space: nowrap !important;
+//     overflow: hidden !important;
+//     text-overflow: ellipsis !important;
+//   }
+// }
+
+.ant-table-container {
+  border-radius: 5px !important;
+}
+.ant-table-container table > tfoot {
+  border-bottom-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.ant-table-container table > tfoot > tr:first-child td:last-child {
+  border-bottom-right-radius: 5px !important;
+}
+.ant-table-container table > tfoot > tr:first-child td:first-child {
+  border-bottom-left-radius: 5px !important;
+}
+.kt-table-bordered .ant-table-tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px !important;
+}
+.kt-table-bordered .ant-table-tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px !important;
+}
+
+.kt-normal-table {
+  border: 1px solid @grey-2;
+  td,
+  th {
+    border: 1px solid @grey-2;
+  }
+  td {
+    padding: 8px 12px;
+  }
+}

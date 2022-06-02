@@ -1,0 +1,58 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+.left-content {
+  background: @grey-0 !important;
+}
+
+.right-content-list {
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: calc(100% - 120px) !important;
+  margin-top: 8px;
+}
+
+.right-content-list-item {
+  width: 100%;
+}
+
+.container {
+  height: 100% !important;
+}
+
+.file-upload-container {
+  height: calc(100% - 40px) !important;
+}
+
+.file-pdf-container {
+  height: calc(100% - 40px) !important;
+  overflow: auto;
+}
+
+.file-upload-icon {
+  font-size: 48px;
+  color: @text-disabled-light;
+}
+
+.card-verify-status {
+  margin-bottom: 8px;
+}
+
+.badge-item-valid {
+  height: 24px;
+  width: 70px;
+  border-radius: 24px;
+  padding: 0px;
+  float: right;
+  background: @color-success;
+}
+
+.badge-item-invalid {
+  height: 24px;
+  width: 103px;
+  border-radius: 24px;
+  padding: 0px;
+  float: right;
+  background: @color-danger;
+}

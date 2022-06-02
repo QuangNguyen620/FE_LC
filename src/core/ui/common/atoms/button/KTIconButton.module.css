@@ -1,0 +1,32 @@
+@value colors: "../../themes/KTColors.css";
+@value color-primary from colors;
+@value color-secondary from colors;
+@value color-success from colors;
+@value color-warning from colors;
+@value color-danger from colors;
+@value color-info from colors;
+
+.kt-icon-btn {
+  font-size: 16px;
+}
+.primary {
+  color: color-primary !important;
+}
+.secondary {
+  color: color-secondary !important;
+}
+.success {
+  color: color-success !important;
+}
+.warning {
+  color: color-warning !important;
+}
+.danger {
+  color: color-danger !important;
+}
+.info {
+  color: color-info !important;
+}
+.default {
+  color: #b8b8b8 !important;
+}

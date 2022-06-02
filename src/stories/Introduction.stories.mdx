@@ -1,0 +1,230 @@
+import { Meta } from '@storybook/addon-docs';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+
+<Meta title="KTDesign/0.Giới thiệu" />
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+    }
+  }
+
+  .link-item {
+    display: block;
+    padding: 20px 30px 20px 15px;
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .link-item strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  .link-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    flex: none;
+  }
+
+  .link-item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+  
+`}</style>
+
+# xCBT Development Introduction
+
+## Intro 
+Tài liệu giới thiệu cấu trúc thư mục source project
+[Xem tại đây](#directories)
+
+## ChangeLog:
+
+### 14/9/2021 
+- atoms:
+  - kt-tag-group: bổ sung atom và stories
+  - kt-ellipsis-tooltip: bổ sung atom và stories
+- molecules:
+  - kt-date-time: bổ sung trường format
+- organisms:
+  - kt-page-header: update css
+- template:
+  - kt-list-layout: sửa lỗi scroll khi collapsed ở searchbar
+  -kt-main-layout: sửa lỗi css
+
+### 8/9/2021 
+- kt-list-layout: sửa lỗi ko lưu trạng thái search, sửa lỗi giao diện
+- kt-tag: update css, add story "simple" param
+- input, modal, select: update css
+
+### 7/9/2021 
+- kt-page-header: chuyển divider vào cùng tabs
+
+### 6/9/2021 
+- add i18n scanner and update i18n to list view and atom
+- update main menu
+- sửa lỗi ko update config trong store đối với form cũ khi load từ cached
+
+### 1/09/2021 update design-system:
+- kt-tag: bổ sung closable, chỉnh css theo figma, merge simple mode của Thắng, remove margin
+- kt-tag-query: nhận vào danh sách query param của form và hiển thị dạng tag group
+- kt-heading: merge simple mode của Thắng, remove margin
+- kt-page-header: bổ sung phần hiển thị query tag
+- kt-simple-layout: bổ sung story cho trang chi tiết có tham số và tab
+
+### 31/08/2021 update design-system:
+- mặc định view panel Docs
+- quy hoạch cấu trúc thư mục ui/common và ui/kto-authoring
+- cập nhật KTTag story
+- bổ sung KTTagBloom story
+- cập nhật KTPageHeader: thêm nút back, tabs, sự kiện onBack, onTabChange
+- bổ sung KTDialogHeader
+
+### 26/08/2021:
+- bổ sung KTMainLayout story
+- thêm nút chuyển phiên bản ở menu dọc
+- cập nhật KTButton: thêm thuộc tính "ghost" cho các nút không fill màu nền, chỉ có border và màu chữ
+- cập nhật KTText
+- cập nhật hooks configDomain: bổ sung hàm getSubscriptionsConfig lấy từ app/Config
+
+## Directories
+```
+xCBT-Authoring#v2.0.0
+├── public/      (static files)
+│   ├── assets/  (assets)
+│   └── index.html (html temlpate)
+│
+├── src/             (project root)
+│   ├── app/            -> app config and bootstrap
+│   │   ├── scss/        (scss/css source)
+│   │   ├── App.js
+│   │   ├── AppRoutes.js   -> routes config
+│   │   ├── AppLanguage.js -> multiple language support
+│   │   └── AppInit.js
+│   ├── core/           -> core library
+│   │   └── ui/         -> core atomic design system
+│   │   |   ├── atoms/      -> atoms control
+│   │   |   ├── molecules/  -> molecules control
+│   │   |   ├── organisms/  -> organisms control
+│   │   |   └── templates/  -> re-use templates
+│   │   ├── utils/      -> share utils functions
+│   │   ├── domains/    -> base domain objects
+│   │   ├── services/   -> base service objects
+│   │   └── stores/     -> global data store
+│   │       ├── auth/   -> auth slice data state: {is_authen, user_profile, token_data, ...}
+│   │       ├── ui/     -> ui slice data state: {menu: is_colapsed, right_sidebar: is_expand, top_bar: {tittle, items,...}, ...}
+│   │       └── useStore.js -> core store module
+│   ├── containers/     -> Application Layer: screen definitions & logic
+│   │   ├── A1/  -> Dashboard components
+│   │   │   ├── A11Screen_Dashboard.js  -> Dashboard screen chứa layout các component và logic dashboard
+│   │   │   └── A12Screen_Monitor.js    -> Monitor screen chứa layout các component và logic monitor
+│   │   └── AppLayout.js -> default layout
+│   ├── components/     -> Sub components & domain
+│   │   ├── A1/  -> Dashboard & logins components
+│   │   │   ├── A11/  -> components
+│   │   │   │   ├── views/  -> component's views
+│   │   │   │   │   ├── A11P1View.js          -> component view content
+│   │   │   │   │   ├── A11P1View.module.css  -> component view style
+│   │   │   │   │   ├── A11P3View             -> component view content
+│   │   │   │   │   └── A11P3View.module.css  -> component view style
+│   │   │   │   ├── domains/  -> domains thao tác với dữ liệu nghiệp vụ
+│   │   │   │   │   └── A11Domain.js  -> Domain data implement logic
+│   │   │   │   └── services/  -> service kết nối và truyền nhận dữ liệu
+│   │   │   │       ├── A11RestApiService.js  -> Api connect service
+│   │   │   │       ├── A11MqttService.js  -> Websocket connect service
+│   │   │   │       └── A11...Service.js  -> 3rd's party service
+│   │   │   ├── A12/  -> components
+│   │   │   └── A13/  -> components
+│   │   └── A2/  -> Dashboard & logins components
+│   └── index.js
+│
+└── package.json
+```
+## Cấu trúc container - component - view - domain
+1 màn hình sẽ được gọi là 1 container(screen), trong container có các thành phần chính:
+- Hàm xử lý logic: thực hiện connect các sự kiện, event trong màn hình, gọi hàm xử lý domain khi cần
+- Domain: các hàm xử lý về mặt nghiệp vụ( gọi api, gọi local storage...)
+- View: chứa các component được sắp xếp theo thiết kế
+- Components: kiến trúc hình cây thể hiện quan hệ cha con giữa các thành phần nhỏ

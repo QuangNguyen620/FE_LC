@@ -1,0 +1,161 @@
+{
+  "a00": {
+    "button": {
+      "verify": "Verify Now"
+    },
+    "content": {
+      "001": "Verify document, file, invoice in Circular No 22/2020/TT-BTTTT date 07/09/2020 of Ministry of Information and Communications",
+      "002": "FREE",
+      "003": "Check document whether edited after sign",
+      "004": "Check signatures are valid in sign time"
+    },
+    "title": {
+      "001": "Portal",
+      "002": "Electronic Document Authentication"
+    }
+  },
+  "a31": {
+    "title": "__STRING_NOT_TRANSLATED__"
+  },
+  "base": {
+    "actions": {
+      "cancel": "__STRING_NOT_TRANSLATED__",
+      "changeStatus": "__STRING_NOT_TRANSLATED__",
+      "collapseSearch": "__STRING_NOT_TRANSLATED__",
+      "confirm": "__STRING_NOT_TRANSLATED__",
+      "delete": "__STRING_NOT_TRANSLATED__",
+      "search": "__STRING_NOT_TRANSLATED__"
+    },
+    "messages": {
+      "changeStatusSuccess": "__STRING_NOT_TRANSLATED__"
+    },
+    "others": {
+      "loading": "__STRING_NOT_TRANSLATED__",
+      "somethingWentWrong": "__STRING_NOT_TRANSLATED__"
+    },
+    "table": {
+      "empty": "__STRING_NOT_TRANSLATED__",
+      "fields": {
+        "createdBy": "__STRING_NOT_TRANSLATED__"
+      },
+      "headers": {
+        "actions": "__STRING_NOT_TRANSLATED__",
+        "status": "__STRING_NOT_TRANSLATED__",
+        "stt": "__STRING_NOT_TRANSLATED__"
+      },
+      "loading": "__STRING_NOT_TRANSLATED__",
+      "others": {
+        "createdByEmpty": "__STRING_NOT_TRANSLATED__"
+      }
+    }
+  },
+  "shares": {
+    "activate": "__STRING_NOT_TRANSLATED__",
+    "addQuestion": "__STRING_NOT_TRANSLATED__",
+    "nMinutes": "__STRING_NOT_TRANSLATED__",
+    "nQuestions": "__STRING_NOT_TRANSLATED__",
+    "nTestForms": "__STRING_NOT_TRANSLATED__",
+    "newlyCreated": "__STRING_NOT_TRANSLATED__",
+    "oneMinute": "__STRING_NOT_TRANSLATED__",
+    "other": "__STRING_NOT_TRANSLATED__",
+    "totalQuestion": "__STRING_NOT_TRANSLATED__",
+    "unlimitedMinutes": "__STRING_NOT_TRANSLATED__"
+  },
+  "tables": {
+    "testFormGroup": {
+      "actions": {
+        "generateTestForm": "__STRING_NOT_TRANSLATED__"
+      }
+    },
+    "testOutline": {
+      "fields": {
+        "code": "__STRING_NOT_TRANSLATED__",
+        "name": "__STRING_NOT_TRANSLATED__"
+      },
+      "fieldsData": {
+        "status": {
+          "activate": "__STRING_NOT_TRANSLATED__",
+          "newlyCreated": "__STRING_NOT_TRANSLATED__",
+          "other": "__STRING_NOT_TRANSLATED__"
+        }
+      },
+      "headers": {
+        "info": "__STRING_NOT_TRANSLATED__",
+        "summary": "__STRING_NOT_TRANSLATED__",
+        "totalTestOutline": "__STRING_NOT_TRANSLATED__"
+      }
+    }
+  },
+  "amsidebar": {
+    "menu": {
+      "quan_ly_nguoi_dung": "User Management",
+      "quan_ly_nguoi_dung_doanh_nghiep": "Corporate User Management",
+      "quan_ly_khach_hang_doanh_nghiep": "Corporate Customer Management",
+      "quan_ly_tai_khoan_doanh_nghiep": "Corporate Account Management",
+      "quan_ly_nguoi_dung_ngan_hang": "Bank User Management",
+      "admin_ngan_hang": "Bank Admin",
+      "user_ngan_hang": "Bank User",
+      "fpt_quan_tri": "FPT Administration",
+      "quan_ly_nhom_nguoi_dung": "User Group Management",
+      "nhom_nguoi_dung_doanh_nghiep": "Corporate User Group",
+      "nhom_nguoi_dung_ngan_hang": "Bank User Group",
+      "mhom_nguoi_dung_fpt_quan_tri": "FPT Administration User Group Management ",
+      "danh_muc_loai_giao_dich_tinh_phi": "Fee Transaction Type Category",
+
+      "quan_ly_dien_gui_nhan": "Quản Lý Điện Gửi Nhận",
+      "bieu_mau_dien": "Biểu Mẫu Điện",
+      "bao_cao_dien": "Báo Cáo Điện",
+
+      "quan_ly_thong_bao": "Notification Management",
+      "bieu_mau_thong_bao": "Notification Form",
+      "quan_ly_goi_dich_vu": "Service Package Management",
+      "quan_ly_dich_vu_ngan_hang": "Bank Service Management",
+      "quan_ly_xep_hang_ngan_hang": "Bank Ranking Management",
+
+      "danh_muc_loai_phi_ngan_hang": "Bank Fees Type Category",
+      "quy_tac_tinh_phi_ngan_hang": "Bank Fees Charge Rules",
+
+      "quan_ly_thu_phi_ngan_hang": "Quản Lý Thu Phí Ngân Hàng",
+
+      "quan_ly_dich_vu_doanh_nghiep": "Corporate Service Management",
+      "danh_muc_loai_phi_doanh_nghiep": "Corporate Fees Type Category",
+      "quy_tac_tinh_phi_doanh_nghiep": "Corporate Fees Charge Rules",
+
+      "quan_ly_thu_phi_doanh_nghiep": "Quản lý thu phí doanh nghiệp",
+
+      "bao_cao": "Report",
+      "bao_cao_nguoi_dung": "User Report",
+      "bao_cao_hop_dong_dien_tu": "E-contract Report",
+      "bao_cao_lc": "L/C Report",
+      "bao_cao_cong_no": "Debt Report",
+      "cong_no_thanh_vien": "Debt Of Member",
+      "cong_no_nha_cung_cap": "Debt Of Provider",
+      "quan_tri_rui_ro": "Risk Management",
+      "thiet_lap_tieu_chi_aml": "AML Criteria Initialize",
+      "danh_muc_du_lieu_chung": "Common Data Category",
+      "quan_ly_bieu_mau": "Form Management",
+      "quan_ly_chi_nhanh": "Branch Management",
+      "quan_ly_phong_ban": "Department Management",
+      "danh_muc_loai_chung_tu": "License Category",
+      "danh_muc_loai_giao_dich": "Transaction Category",
+      "phan_loai_lc": "L/C Classification",
+      "quan_ly_thong_tin_fpt": "FPT Information Management",
+      "dinh_nghia_ma_loi_he_thong": "System Error Code Definition",
+      "quan_ly_job": "Job Management",
+      "danh_sach_job": "Job List",
+      "bao_cao_job": "Job Report",
+      "quan_tri_he_thong": "System Administration",
+      "cau_hinh_sla": "SLA Configuration",
+      "phe_duyet_tac_vu": "Task Approvement",
+      "quan_ly_cau_hinh_he_thong": "System Configuration Management",
+      "quan_ly_to_chuc_ket_noi": "Connect Organization Management",
+      "tin_tuc_va_dieu_khoan_dieu_kien": "News And Terms & Conditions"
+    }
+  },
+  "message" : {
+    "error": {
+      "user_does_not_exit" : "Trạng thái người dùng không hợp lệ.",
+      "user_not_valid" : "Tên đăng nhập hoặc mật khẩu không chính xác!"
+    }
+  }
+}

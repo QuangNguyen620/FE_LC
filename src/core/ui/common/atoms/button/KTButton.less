@@ -1,0 +1,170 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+@KTButton-prefix-cls: ~'KTButton';
+@KTBadgeButton-prefix-cls: ~'KTBadgeButton';
+
+.@{KTButton-prefix-cls} {
+  border-radius: 5px !important;
+}
+
+.kt-btn-base(@color; @background; @border; @background-hover-focus; @background-active; @background-tag; @color-border-blur) {
+  color: @color !important;
+  background-color: @background !important;
+  border-color: @background !important;
+
+  &:hover,
+  &:focus {
+    background-color: @background-hover-focus !important;
+    border-color: @background-hover-focus !important;
+  }
+
+  &:active {
+    background-color: @background-active !important;
+    border-color: @background-active !important;
+  }
+
+  &.@{KTButton-prefix-cls}-border-blur {
+    border-color: @color-border-blur !important;
+  }
+
+  &.@{KTButton-prefix-cls}-ghost {
+    color: @background !important;
+    background-color: transparent !important;
+    border-color: @background !important;
+
+    &:hover,
+    &:focus {
+      color: @background-hover-focus !important;
+      border-color: @background-hover-focus !important;
+    }
+
+    &:active {
+      color: @background-active !important;
+      border-color: @background-active !important;
+    }
+
+    &.@{KTButton-prefix-cls}-border-blur {
+      border-color: @color-border-blur !important;
+
+      &:hover,
+      &:focus {
+        color: @background !important;
+        border-color: @background-hover-focus !important;
+      }
+    }
+  }
+
+  &.@{KTButton-prefix-cls}-ghost.@{KTButton-prefix-cls}-dashed {
+    border-style: dashed;
+  }
+
+  &.@{KTButton-prefix-cls}-tag {
+    color: @background !important;
+    background-color: @background-tag !important;
+    border-color: @background-tag !important;
+    box-shadow: none !important;
+
+    &:hover {
+      border: 1px solid @background-hover-focus !important;
+    }
+  }
+
+  &.@{KTBadgeButton-prefix-cls} {
+    padding: 4px 12px !important;
+    color: @text-body-light !important;
+    background-color: @grey-1 !important;
+    border-color: @grey-1 !important;
+
+    .@{KTBadgeButton-prefix-cls}-count {
+      font-size: 12px !important;
+      color: #ffffff !important;
+      padding: 0 4px !important;
+      border-radius: 4px !important;
+      background-color: @background !important;
+
+      &.@{KTBadgeButton-prefix-cls}-count-active {
+        background-color: #ffffff !important;
+        color: @background !important;
+      }
+    }
+
+    &.@{KTBadgeButton-prefix-cls}-active {
+      color: #ffffff !important;
+      background-color: @background !important;
+      border-color: @background !important;
+
+      .@{KTBadgeButton-prefix-cls}-count {
+        color: @background !important;
+        background-color: #ffffff !important;
+      }
+
+      &:hover,
+      &:focus {
+        color: #ffffff !important;
+        border-color: @background-hover-focus !important;
+        background-color: @background-hover-focus !important;
+      }
+
+      &:active {
+        color: #ffffff !important;
+        border-color: @background-active !important;
+        background-color: @background-active !important;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: @background !important;
+      border-color: @background !important;
+    }
+
+    &:active {
+      color: @text-body-light !important;
+      border-color: @background-active !important;
+    }
+  }
+}
+
+.@{KTButton-prefix-cls}-type-primary {
+  .kt-btn-base(@white; @color-primary; transparent; @color-primary-hover; @color-primary-active; @color-primary-tag; @color-primary-border);
+}
+
+.@{KTButton-prefix-cls}-type-secondary {
+  .kt-btn-base(@white; @color-secondary; transparent; @color-secondary-hover; @color-secondary-active; @color-secondary-tag; @color-secondary-border);
+}
+
+.@{KTButton-prefix-cls}-type-success {
+  .kt-btn-base(@white; @color-success; transparent; @color-success-hover; @color-success-active; @color-success-tag; @color-success-border);
+}
+
+.@{KTButton-prefix-cls}-type-info {
+  .kt-btn-base(@white; @color-info; transparent; @color-info-hover; @color-info-active; @color-info-tag; @color-info-border);
+}
+
+.@{KTButton-prefix-cls}-type-danger {
+  .kt-btn-base(@white; @color-danger; transparent; @color-danger-hover; @color-danger-active; @color-danger-tag; @color-danger-border);
+}
+
+.@{KTButton-prefix-cls}-type-warning {
+  .kt-btn-base(@white; @color-warning; transparent; @color-warning-hover; @color-warning-active; @color-warning-tag; @color-warning-border);
+}
+
+.@{KTButton-prefix-cls}-type-title {
+  .kt-btn-base(@white; @text-title-light; transparent; @text-title-light; @text-title-light; @color-primary-tag; @text-title-light);
+}
+
+.@{KTButton-prefix-cls}-type-primary-text {
+  .kt-btn-base(@white; @text-primary-text-light; transparent; @text-primary-text-light; @text-primary-text-light; @color-primary-tag; @text-primary-text-light);
+}
+
+.@{KTButton-prefix-cls}-type-text {
+  .kt-btn-base(@white; @text-primary-text-light; transparent; @text-primary-text-light; @text-primary-text-light; @color-primary-tag; @text-primary-text-light);
+}
+
+.@{KTButton-prefix-cls}-type-primary-light {
+  .kt-btn-base(@text-primary-dark; @color-primary-tag; transparent; @color-primary-tag; @color-primary-tag; @color-primary-tag; @color-primary-tag;);
+}
+
+.ant-form-item-has-error .KTButton {
+  border-color: #ff4d4f !important;
+}

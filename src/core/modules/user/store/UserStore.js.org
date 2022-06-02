@@ -1,0 +1,23 @@
+import { initStore } from 'core/store/store';
+import log from '../ModuleLogger';
+const tag = 'UserStore';
+const INITIAL_STATE = {
+  userContext: {},
+};
+const configureStore = () => {
+  log.info(tag, 'Initialize User store');
+  const actions = {
+    USER_UPDATE_CONTEXT: (curState, payload) => {
+      log.trace(tag, 'USER_UPDATE_CONTEXT', payload);
+      return { userContext: payload };
+    },
+    USER_RESET_CONTEXT: (curState) => {
+      log.trace(tag, 'USER_RESET_CONTEXT');
+      return INITIAL_STATE;
+    },
+  };
+
+  initStore(actions, INITIAL_STATE);
+};
+
+export default configureStore;

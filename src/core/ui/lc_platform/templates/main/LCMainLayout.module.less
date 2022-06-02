@@ -1,0 +1,83 @@
+@import '~core/ui/common/themes/KTColors.less';
+
+@media (max-width: 767px) {
+  .site-layout {
+    margin-left: 60px !important;
+  }
+}
+
+.site-layout {
+  background: white;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 100vh;
+}
+.header-sp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 0 24px;
+  height: 54px !important;
+  box-shadow: inset 0px -1px 0px #e8e8e8;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  background: transparent;
+}
+
+.top-menu {
+  background: @color-primary !important;
+  color: @white !important;
+}
+
+.nav-icon {
+  // display: flex;
+  cursor: pointer;
+}
+
+.counter {
+  width: 15px;
+  height: 15px;
+  background: @color-danger;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 11px;
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  color: @white;
+  font-weight: bold;
+  top: -2px;
+  right: 300px;
+}
+
+.layout-main-content {
+  background: @grey-1 !important;
+  padding: 32px !important;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 850px;
+}
+
+div#custom-sidebar {
+  background-color: white !important;
+}
+
+.sidebar-menu-wrapper {
+  width: 107%;
+  height: 90%;
+  // margin-bottom: 15%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.KTMainLayout-footer-wrapper {
+  width: 100%;
+  background: transparent;
+  row-gap: 0px;
+  height: 46px;
+  position: absolute;
+  top: 95%;
+}

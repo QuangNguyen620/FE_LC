@@ -1,0 +1,32 @@
+import { initStore } from 'core/store/store';
+import log from '../ModuleLogger';
+const tag = 'ConfigStore';
+const INITIAL_STATE = {
+  configContext: {
+    category: {},
+    tags: [],
+    classes: [],
+    grades: [],
+    subjects: [],
+    notify: '',
+    delivery: {},
+    company: [],
+  },
+};
+const configureStore = () => {
+  log.info(tag, 'Initialize store');
+  const actions = {
+    CONFIG_UPDATE_CONTEXT: (curState, payload) => {
+      log.trace(tag, 'CONFIG_UPDATE_CONTEXT', payload);
+      return { configContext: payload };
+    },
+    CONFIG_RESET_CONTEXT: (curState) => {
+      log.trace(tag, 'CONFIG_RESET_CONTEXT', curState);
+      return INITIAL_STATE;
+    },
+  };
+
+  initStore(actions, INITIAL_STATE);
+};
+
+export default configureStore;

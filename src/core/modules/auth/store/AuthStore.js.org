@@ -1,0 +1,48 @@
+import { initStore } from 'core/store/store';
+import log from '../ModuleLogger';
+const tag = 'AuthStore';
+const INITIAL_STATE = {
+  authContext: {
+    isAuthen: false,
+    isLogout: false,
+    tokens: {
+      access_token: '',
+      refresh_token: '',
+    },
+  },
+  userContext: {},
+  configContext: {},
+};
+const configureStore = () => {
+  log.info(tag, 'Initialize Auth store');
+  const actions = {
+    AUTH_UPDATE_CONTEXT: (curState, payload) => ({
+      authContext: { ...curState.authContext, ...payload },
+    }),
+    AUTH_UPDATE_TOKENS: (curState, tokens) => {
+      const newContext = curState.authContext;
+      newContext.tokens = {
+        access_token: tokens.access_token,
+        refresh_token: tokens.refresh_token,
+      };
+      return { authContext: newContext };
+    },
+    AUTH_UPDATE_IS_AUTH: (curState, isAuthen) => {
+      const newContext = curState.authContext;
+      newContext.isAuthen = isAuthen;
+      return { authContext: newContext };
+    },
+    AUTH_RESET_CONTEXT: (curState) => {
+      return INITIAL_STATE;
+    },
+    AUTH_LOGOUT: (curState) => {
+      let newContext = { ...INITIAL_STATE };
+      newContext.authContext.isLogout = true;
+      return newContext;
+    },
+  };
+
+  initStore(actions, INITIAL_STATE);
+};
+
+export default configureStore;
