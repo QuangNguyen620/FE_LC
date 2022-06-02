@@ -11,12 +11,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                sh 'npm install --global yarn'
             }
         }
         stage('Test') {
                     steps {
                         echo "System is testing ${CI}"
+                        sh 'yarn --version'
                     }
                 }
                 stage('Deliver') {
