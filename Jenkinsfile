@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install yarn'
+                sh 'yarn set version 1.22.17'
                 sh 'yarn install'
             }
         }
