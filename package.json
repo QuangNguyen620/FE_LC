@@ -81,10 +81,10 @@
   },
   "scripts": {
     "start-js": "react-app-rewired start",
-    "start": "react-app-rewired start",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
     "build-js": "DISABLE_ESLINT_PLUGIN=true && GENERATE_SOURCEMAP=false react-app-rewired build --expose-gc --max-old-space-size=4096",
     "build-nginx": "cp nginx.conf ./build/ && cp -rf nginx-start ./build/",
-    "build": "npm-run-all 'lint --quiet' test:generate-output build-js build-storybook build-nginx",
     "test": "react-scripts test --env=jsdom ",
     "test:generate-output": "react-scripts test --json --outputFile=src/.jest-test-results.json --ci --silent --watchAll=false || exit 0",
     "eject": "react-app-rewired eject",
